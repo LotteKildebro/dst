@@ -1,0 +1,41 @@
+.text-p {
+    padding-top: 3%;
+    font-family: $lato;
+    padding-left: 3%;
+    h2 {
+        font-family: $oswald;
+    }
+    p {
+        max-height: 35px;
+        font-size: 0.8em;
+    }
+    ul li {
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+    li::marker {
+        color: $brand-color;
+    }
+}
+
+//content
+.text-p {
+    padding-top: 20%;
+    font-family: $lato;
+    padding-left: 10%;
+    h2 {
+        font-family: $oswald;
+        margin-bottom: 3%;
+    }
+    p {
+        max-width: 500px;
+        font-size: 1em;
+    }
+    ul li {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    li::marker {
+        color: $brand-color;
+    }
+}

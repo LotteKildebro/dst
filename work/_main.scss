@@ -1,0 +1,537 @@
+//Mobile first
+#myBtn {
+    display: none;
+}
+
+//contact owner page
+.own-info {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 500px;
+}
+
+//Navigation bar
+.navbar {
+    background-color: $brand-color;
+    font-family: $oswald;
+    a {
+        color: $white;
+        text-align: center;
+        border-bottom: 1px solid lighten($brand-color, 3%);
+        padding: 20px;
+    }
+    .container {
+        max-width: 1280px;
+    }
+    .navbar-brand {
+        cursor: pointer;
+        border: none;
+    }
+    .navbar-brand:hover {
+        color: white;
+    }
+    .dropdown-menu.show {
+        background-color: $brand-color;
+        border: none;
+        border-bottom: 1px solid lighten($brand-color, 3%);
+        a,
+        a.nav-link {
+            text-align: center;
+            border: none;
+        }
+        a.dropdown-item {
+            font-family: lato;
+            font-size: .7em;
+        }
+    }
+}
+
+.logo-text {
+    display: none;
+}
+
+//Carusel header
+#header {
+    width: 100%;
+    height: 80vh;
+    margin-top: 5%;
+    .carousel {
+        height: 100%;
+        .carousel-inner {
+            height: 100%;
+            .carousel-item {
+                height: 100%;
+                .title {
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+                    left: 50%;
+                    top: 50%;
+                    font-family: $oswald;
+                    transform: translate(-50%, -50%);
+                    color: #fff;
+                    h1 {
+                        font-size: 3rem;
+                    }
+                }
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+//Button for the header slider
+.slider-btn {
+    background-color: $white;
+    border: none;
+    color: $brand-color;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.slider-btn:hover {
+    background-color: $brand-color;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.padbtn {
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+}
+
+//greeting text under header
+.top-text-header {
+    margin-top: 3%;
+}
+
+.top-text {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-family: $lato;
+    p {
+        margin-top: 3%;
+        font-size: 1.5em;
+    }
+    h2 {
+        font-family: $oswald;
+        font-size: 2.5em;
+    }
+    h2:after {
+        content: '';
+        height: 4px;
+        width: 100px;
+        position: relative;
+        background: $brand-color;
+        margin: 3% auto 0 auto;
+        display: block;
+    }
+}
+
+//content
+.text-p {
+    padding-top: 7%;
+    padding-bottom: 6%;
+    font-family: $lato;
+    padding-left: 3%;
+    min-height: 250px;
+    h2 {
+        font-family: $oswald;
+    }
+    p {
+        max-height: 40px;
+        font-size: 0.9em;
+        margin-right: 10px;
+    }
+    ul li {
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+    li::marker {
+        color: $brand-color;
+    }
+}
+
+//Button for the content section
+.content-btn {
+    background-color: $brand-color;
+    border: none;
+    color: $white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.content-btn:hover {
+    background-color: lighten($brand-color, 5%);
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+//grey background for content
+.grey-bg {
+    background-color: rgb(243, 242, 242);
+}
+
+//footer
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: $oswald;
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: $lato;
+}
+
+.color {
+    opacity: 0.7;
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+    font-family: $lato;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+.top-text-content {
+    padding-top: 25%;
+    margin: 0% 2% 0% 2%;
+    p {
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.footer-dark .item.social>a {
+    font-size: 1.1em;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+//contact section with icons
+.contact-info {
+    display: block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.contact_icons {
+    i {
+        background-color: $brand-color;
+        color: $white;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        display: inline-block;
+        text-align: center;
+    }
+    p {
+        font-family: $oswald;
+        font-size: 1.1em;
+        margin-top: 10px;
+    }
+    a {
+        color: #282d32;
+    }
+    a:hover {
+        text-decoration: none;
+        color: #4c5258;
+    }
+}
+
+//dropdown "under" pages -> kompetencer
+.blue-text {
+    color: $brand-color;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+} //tables
+table {
+    font-family: $lato;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid $brand-color;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background-color: rgb(248, 248, 248);
+    ;
+}
+
+.p-text-long {
+    h2 {
+        font-family: $oswald;
+    }
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    li::marker {
+        color: $brand-color;
+        font-size: 1em;
+    }
+    .link-a {
+        text-decoration: none;
+        color: $brand-color;
+    }
+}
+
+.link-a:hover {
+    color: rgb(68, 68, 68);
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+
+.openhours {
+    margin-bottom: 17%;
+}
+
+.sloganp p {
+    padding-top: 0%;
+    padding-left: 4%;
+} //large devices
+@media (min-width: 990px) {
+    //google maps
+    iframe {
+        width: 100%;
+    } //nav scroll function
+    .smart-scroll {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .scrolled-down {
+        transform: translateY(-100%);
+        transition: all 0.3s ease;
+    }
+    .scrolled-up {
+        transform: translateY(0);
+        transition: all 0.3s ease;
+    } //for top text
+    .top-text-content {
+        padding-top: 10%;
+        margin: 0% 0% 0% 0%;
+        p {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+    } //contact site
+    .own-pad {
+        padding: 2%;
+    }
+    .pd-1 {
+        padding-left: 40%;
+        p {
+            font-size: .8em;
+            text-align: center;
+        }
+    }
+    .sloganp p {
+        padding-top: 20%;
+        padding-left: 30%;
+    }
+    #wrapper {
+        margin: 0 auto;
+        max-width: 1480px;
+    } //google maps on contact
+    .pad-google {
+        margin-left: 10%;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        width: 50px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: $brand-color;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        font-family: $lato;
+        font-size: .7em;
+    }
+    #myBtn:hover {
+        background-color: lighten($brand-color, 5%);
+    }
+    .logo-text {
+        font-family: $lato;
+        font-size: .7em;
+        display: inline;
+        margin: 0px 0px 0px 10px;
+    } //active for navbar
+    #topheader .navbar-nav li>a {
+        text-transform: capitalize;
+    }
+    #topheader .navbar-nav li.active>a {
+        color: darken($brand-color, 20%);
+    }
+    .navbar a {
+        border: none;
+        padding: 10px;
+    }
+    .title h1 {
+        font-size: 4rem !important;
+    }
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: darken($brand-color, 20%);
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+        background-color: $brand-color;
+        border: none;
+        a {
+            background-color: $brand-color;
+            font-family: lato;
+            font-size: .7em;
+        }
+        a:hover {
+            color: darken($brand-color, 20%);
+        }
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+        border-radius: 0px;
+    } //content
+    .p-text-long {
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    .text-p {
+        padding-top: 10%;
+        padding-bottom: 2%;
+        font-family: $lato;
+        padding-left: 10%;
+        h2 {
+            font-family: $oswald;
+            margin-bottom: 3%;
+        }
+        p {
+            max-width: 500px;
+            font-size: 1em;
+        }
+        ul li {
+            font-size: 1em;
+            font-weight: bold;
+        }
+        li::marker {
+            color: $brand-color;
+            font-size: 1em;
+        }
+    }
+    .pad {
+        padding-top: 20%;
+    }
+    .p-left {
+        margin-left: 5%;
+    }
+}
